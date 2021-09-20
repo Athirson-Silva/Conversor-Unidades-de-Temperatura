@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversor de Temperaturas</title>
+
+    <script src="conversoes.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	
+<body>
+	
+	<h1>Bem vindo ao conversor de unidades de temperatura!</h1>
+	
+	<p>Insira o valor e escolha qual sua unidade inicial e para qual unidade será convertida.</p>
+	
+	<input type="number" placeholder="Insira o valor" id="valor"> <br> <br>
+	
+	<button type="submit" onclick="ConverterCParaF()">Celsius para Fahrenheit</button>
+	<button type="submit" onclick="ConverterFParaC()">Fahrenheit para Celsius</button> <br>
+	
+	<button type="submit" onclick="ConverterCParaK()">Celsius para Kelvin</button> 
+	<button type="submit" onclick="ConverterKParaC()">Kelvin para Celsius</button> <br>
+	
+	<button type="submit" onclick="ConverterFParaK()">Fahrenheit para Kelvin</button>
+	<button type="submit" onclick="ConverterKParaF()">Kelvin para Fahrenheit</button> <br> 
+	
+	<h2 id="valorConvertido"></h2>
+	
+</body>
+
+</html>
